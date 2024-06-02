@@ -1,0 +1,2 @@
+g++ -o trabajoFinalCamiloSolano final.cpp resource.rc
+lo uso para hacer el .exe del programa
