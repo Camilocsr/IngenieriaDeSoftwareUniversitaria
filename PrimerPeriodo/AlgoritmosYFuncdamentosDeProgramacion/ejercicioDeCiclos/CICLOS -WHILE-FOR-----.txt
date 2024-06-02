@@ -1,0 +1,1696 @@
+1.-Hacer un pseudocodigo que imprima los numeros del 1 al 100.
+ 
+ 
+ 
+PROGRAMA contador1
+ 
+ENTORNO:
+ 
+   c <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS c < 101 HACER
+ 
+      ESCRIBIR c
+ 
+      c <- c + 1
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+2.-Hacer un pseudocodigo que imprima los numeros del 100 al 0, en orden
+ 
+decreciente.
+ 
+ 
+ 
+PROGRAMA contador2
+ 
+ENTORNO:
+ 
+   c <- 100
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS c <= 0 HACER
+ 
+      ESCRIBIR c
+ 
+      c <- c - 1
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+3.-Hacer un pseudocodigo que imprima los numeros pares entre 0 y 100.
+ 
+ 
+ 
+PROGRAMA pares
+ 
+ENTORNO:
+ 
+   c <- 2
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS c < 101 HACER
+ 
+      ESCRIBIR c
+ 
+      c <- c + 2
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+4.-Hacer un programa que imprima la suma de los 100 primeros numeros.
+ 
+ 
+ 
+PROGRAMA suma
+ 
+ENTORNO:
+ 
+   c <- 1
+ 
+   suma <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS c <= 100 HACER
+ 
+      suma <- suma + c
+ 
+      c <- c + 1
+ 
+   FINMIENTRAS
+ 
+   ESCRIBIR "La suma de los 100 primeros n£meros es: "
+ 
+   ESCRIBIR suma
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+5.-Hacer un pseudocódigo que imprima los numeros impares hasta el 100 y que
+ 
+imprima cuantos impares hay.
+ 
+ 
+ 
+PROGRAMA impares
+ 
+ENTORNO:
+ 
+   c <- 1
+ 
+   son <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS c < 100
+ 
+      ESCRIBIR c
+ 
+      c <- c + 2
+ 
+      son <- son + 1
+ 
+   FINMIENTRAS
+ 
+   ESCRIBIR "El n£mero de impares: "
+ 
+   ESCRIBIR son
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+6.-Hacer un pseudocodigo que imprima todos los numeros naturales que hay
+ 
+desde la unidad hasta un numero que introducimos por teclado.
+ 
+ 
+ 
+PROGRAMA natural
+ 
+ENTORNO:
+ 
+   i <- 0
+ 
+   n <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   ESCRIBIR "Introduce un n£mero: "
+ 
+   LEER n
+ 
+   MIENTRAS i < n HACER
+ 
+      i <- i + 1
+ 
+      ESCRIBIR i
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+7.-Introducir tantas frases como queramos y contarlas.
+ 
+ 
+ 
+PROGRAMA frases
+ 
+ENTORNO:
+ 
+   res <- "S"
+ 
+   frase <- Espacios( 30 )
+ 
+   c <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS res = "S" HACER
+ 
+      ESCRIBIR "Frase: "
+ 
+      LEER frase
+ 
+      c <- c + 1
+ 
+      ESCRIBIR "Deseas introducir m s frases (S/N): "
+ 
+      LEER res
+ 
+   FINMIENTRAS
+ 
+   ESCRIBIR "El n£mero de frases introducidas son: "
+ 
+   ESCRIBIR c
+ 
+FINPROGRAMA
+
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+8.-Hacer un pseudocodigo que solo nos permita introducir S o N.
+ 
+ 
+ 
+PROGRAMA sn
+ 
+ENTORNO:
+ 
+   res <- " "
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS res <> "S" Y res <> "N" HACER
+ 
+      ESCRIBIR "Introduce S o N"
+ 
+      LEER res
+ 
+      res <- Convertir_may£sculas( res )
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+9.-Introducir un numero por teclado. Que nos diga si es positivo o negativo.
+ 
+ 
+ 
+PROGRAMA signo
+ 
+ENTORNO:
+ 
+   num <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   ESCRIBIR "Introduce un n£mero: "
+ 
+   LEER num
+ 
+   SI num >= 0 ENTONCES
+ 
+      ESCRIBIR "es positivo"
+ 
+   SINO
+ 
+      ESCRIBIR "es negativo"
+ 
+   FINSI
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+11.-Imprimir y contar los multiplos de 3 desde la unidad hasta un numero que
+ 
+introducimos por teclado.
+ 
+ 
+ 
+PROGRAMA multiplo3
+ 
+ENTORNO:
+ 
+   i <- 3
+ 
+   n <- 0
+ 
+   c <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   ESCRIBIR "N£mero: "
+ 
+   LEER n
+ 
+   MIENTRAS i <= n HACER
+ 
+      SI i = int( i / 3 ) * 3 ENTONCES
+ 
+         ESCRIBIR i
+ 
+         c <- c + 1
+ 
+      FINSI
+ 
+      i <- i + 1
+ 
+   FINMIENTRAS
+ 
+   ESCRIBIR "El n£mero de m£ltiplos de 3 son: "
+ 
+   ESCRIBIR c
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+12.-Hacer un pseudocodigo que imprima los numeros del 1 al 100. Que calcule la
+ 
+suma de todos los numeros pares por un lado, y por otro, la de todos los
+ 
+impares.
+ 
+ 
+ 
+PROGRAMA par_impar
+ 
+ENTORNO:
+ 
+   i <- 1
+ 
+   sumapar <- 0
+ 
+   sumaimp <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS i < 101 HACER
+ 
+      SI i = int( i / 2 ) * 2 ENTONCES
+ 
+         sumapar <- sumapar + i
+ 
+      SINO
+ 
+         sumaimp <- sumaimp + i
+ 
+      FINSI
+ 
+      i <- i + 1
+ 
+   FINMIENTRAS
+ 
+   ESCRIBIR "La suma de los pares es: "
+ 
+   ESCRIBIR sumapar
+ 
+   ESCRIBIR "La suma de los impares es: "
+ 
+   ESCRIBIR sumaimp
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+13.-Imprimir y contar los numeros que son multiplos de 2 o de 3 que hay entre
+ 
+1 y 100.
+ 
+PROGRAMA multiplo_2_3
+ 
+ENTORNO:
+ 
+   i <- 1
+ 
+   c <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS i < 101 HACER
+ 
+      SI i = int( i / 2 ) * 2 O i = int( i / 3 ) * 3 ENTONCES
+ 
+         c <- c + 1
+ 
+         ESCRIBIR i
+ 
+      FINSI
+ 
+      i <- i + 1
+ 
+   FINMIENTRAS
+ 
+   ESCRIBIR "El n£mero de m£ltiplos es de: "
+ 
+   ESCRIBIR c
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+14.-Hacer un pseudocodigo que imprima el mayor y el menor de una serie de
+ 
+cinco numeros que vamos introduciendo por teclado.
+ 
+ 
+ 
+PROGRAMA mayor_menor
+ 
+ENTORNO:
+ 
+   con <- 0
+ 
+   n <- 0
+ 
+   maximo <- 0
+ 
+   minimo <- 99999
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS con <= 5 HACER
+ 
+      ESCRIBIR "N£mero: "
+ 
+      LEER n
+ 
+      SI n > maximo ENTONCES
+ 
+         maximo = n
+ 
+      FINSI
+ 
+      SI n < minimo ENTONCES
+ 
+         minimo <- n
+ 
+      FINSI
+ 
+      con <- con + 1
+ 
+   FINMIENTRAS
+ 
+   ESCRIBIR "El mayor de los n£meros es: "
+ 
+   ESCRIBIR maximo
+ 
+   ESCRIBIR "El menor de los n£meros es: "
+ 
+   ESCRIBIR minimo
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+15.-Introducir dos numeros por teclado. Imprimir los numeros naturales que
+ 
+hay entre ambos numeros empezando por el m s pequeño, contar cuantos hay y
+ 
+cuantos de ellos son pares. Calcular la suma de los impares.
+ 
+PROGRAMA par_impar
+ 
+ENTORNO:
+ 
+   num1 <- 0
+ 
+   num2 <- 0
+ 
+   aux <- 0
+ 
+   son <- 0
+ 
+   pares <- 0
+ 
+   sumaimpa <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   ESCRIBIR "N£mero: "
+ 
+   LEER num1
+ 
+   ESCRIBIR "N£mero: "
+ 
+   LEER num2
+ 
+   SI num1 > num2 ENTONCES
+ 
+      aux <- num1
+ 
+      num1 <- num2
+ 
+      num2 <- aux
+ 
+   FINSI
+ 
+   MIENTRAS num1 >= num2 HACER
+ 
+      ESCRIBIR num1
+ 
+      son <- son + 1
+ 
+      SI num1 = int( num1 / 2 ) * 2 ENTONCES
+ 
+         pares <- pares + 1
+ 
+      SINO
+ 
+         sumaimpa <- sumaimpa + num1
+ 
+      FINSI
+ 
+      num1 <- num1 + 1
+ 
+   FINMIENTRAS
+ 
+   ESCRIBIR "N£meros visualizados: "
+ 
+   ESCRIBIR son
+ 
+   ESCRIBIR "Pares hay: "
+ 
+   ESCRIBIR pares
+ 
+   ESCRIBIR "La suma de los impares es: "
+ 
+   ESCRIBIR sumaimpa
+ 
+FINPROGRAMA
+ 
+ 
+
+--------------------------------------------------------------------------
+ 
+ 
+ 
+16.-Imprimir diez veces la serie de numeros del 1 al 10.
+ 
+ 
+ 
+PROGRAMA diez
+ 
+ENTORNO:
+ 
+   serie <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS serie <= 10 HACER
+ 
+      numero <- 1
+ 
+      MIENTRAS numero <= 10 HACER
+ 
+         ESCRIBIR numero
+ 
+         numero <- numero + 1
+ 
+      FINMIENTRAS
+ 
+      serie <- serie + 1
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+17.-Imprimir, contar y sumar los multiplos de 2 que hay entre una serie de
+ 
+numeros, tal que el segundo sea mayor o igual que el primero.
+ 
+ 
+ 
+PROGRAMA multiplo2
+ 
+ENTORNO:
+ 
+   res <- "S"
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS res = "S" HACER
+ 
+      c <- 0
+ 
+      sum <- 0
+ 
+      num1 <- 0
+ 
+      num2 <- -999
+ 
+      ESCRIBIR "N£mero: "
+ 
+      LEER num1
+ 
+      ESCRIBIR "N£mero mayor que el anterior"
+ 
+      MIENTRAS num1 >= num2 HACER
+ 
+         LEER num2
+ 
+      FINMIENTRAS
+ 
+      num1 <- num1 + 1
+ 
+      MIENTRAS num1 <= num2 - 1 HACER
+ 
+         SI num1 = int( num1 / 2 ) * 2 ENTONCES
+ 
+            ESCRIBIR num1
+ 
+            c <- c + 1
+ 
+            sum <- sum + num1
+ 
+         FINSI
+ 
+         num1 <- num1 + 1
+ 
+      FINMIENTRAS
+ 
+      ESCRIBIR "N£mero de m£ltiplos de 2: "
+ 
+      ESCRIBIR c
+ 
+      ESCRIBIR "Su suma es: "
+ 
+      ESCRIBIR sum
+ 
+      res <- Espacios( 1 )
+ 
+      MIENTRAS res <> "S" Y res <> "N" HACER
+ 
+         ESCRIBIR "Otra serie de n£meros (S/N): "
+ 
+         LEER res
+ 
+         res <- Convertir_may£sculas( res )
+ 
+      FINMIENTRAS
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+18.-Hacer un pseudocodigo que cuente las veces que aparece una determinada
+ 
+letra en una frase que introduciremos por teclado.
+ 
+ 
+ 
+PROGRAMA letra
+ 
+ENTORNO:
+ 
+   frase <- Espacios( 30 )
+ 
+   letra <- Espacios( 1 )
+ 
+   longitud <- 0
+ 
+   a <- 0
+ 
+   res <- "S"
+ 
+ALGORITMO:
+ 
+   MIENTRAS res = "S" HACER
+ 
+      Borrar_pantalla( )
+ 
+      ESCRIBIR "Introduce una frase: "
+ 
+      LEER frase
+ 
+      longitud <- Hallar_longitud( frase )
+ 
+      i <- 1
+ 
+      ESCRIBIR "Letra a buscar: "
+ 
+      LEER letra
+ 
+      MIENTRAS i <= longitud HACER
+ 
+         SI letra = Caracter( frase, i, 1 ) ENTONCES
+ 
+            a <- a + 1
+ 
+         FINSI
+ 
+         i <- i + 1
+ 
+      FINMIENTRAS
+ 
+      Borrar_pantalla( )
+ 
+      ESCRIBIR "El n£mero de veces que aparece la letra "
+ 
+      ESCRIBIR letra
+ 
+      ESCRIBIR " en la frase "
+ 
+      ESCRIBIR frase
+ 
+      ESCRIBIR " es de "
+ 
+      ESCRIBIR a
+ 
+      res <- Espacios( 1 )
+ 
+      MIENTRAS res <> "S" Y res <> "N" HACER
+ 
+         ESCRIBIR "Desea introducir m&aacute;s frases (S/N): "
+ 
+         LEER res
+ 
+         res <- Convertir_may£sculas( res )
+ 
+      FINMIENTRAS
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+19.-Hacer un pseudocodigo que simule el funcionamiento de un reloj digital y
+ 
+que permita ponerlo en hora.
+ 
+ 
+ 
+PROGRAMA reloj
+ 
+ENTORNO:
+ 
+   horas <- 0
+ 
+   minutos <- 0
+ 
+   segundos <- 0
+ 
+   res <- "S"
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   ESCRIBIR "Horas: "
+ 
+   LEER horas
+ 
+   ESCRIBIR "Minutos: "
+ 
+   LEER minutos
+ 
+   ESCRIBIR "Segundos: "
+ 
+   LEER segundos
+ 
+   MIENTRAS res = "S" HACER
+ 
+      MIENTRAS horas < 24 HACER
+ 
+         MIENTRAS minutos < 60 HACER
+ 
+            MIENTRAS segundos < 60 HACER
+ 
+               ESCRIBIR horas
+ 
+               ESCRIBIR minutos
+ 
+               ESCRIBIR segundos
+ 
+               segundos <- segundos + 1
+ 
+            FINMIENTRAS
+ 
+            minutos <- minutos + 1
+ 
+            segundos <- 0
+ 
+         FINMIENTRAS
+ 
+         horas <- horas + 1
+ 
+         minutos <- 0
+ 
+      FINMIENTRAS
+ 
+      horas <- 0
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+20.-Calcular el factorial de un numero, mediante subprogramas.
+ 
+ 
+ 
+PROGRAMA factorial
+ 
+ENTORNO:
+ 
+   res <- "S"
+ 
+ALGORITMO:
+ 
+   MIENTRAS res = "S" HACER
+ 
+      Borrar_pantalla( )
+ 
+      factorial <- 1
+ 
+      ESCRIBIR "N£mero: "
+ 
+      LEER numero
+ 
+      SI numero < 0 ENTONCES
+ 
+         ESCRIBIR "No tiene factorial"
+ 
+      SINO
+ 
+         HACER Calculos
+ 
+      FINSI
+ 
+      HACER Mas
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+------------------------------
+ 
+SUBPROGRAMA Calculos
+ 
+   MIENTRAS numero > 1 HACER
+ 
+      factorial <- factorial * numero
+ 
+      numero <- numero - 1
+ 
+   FINMIENTRAS
+ 
+   HACER Imprimir
+ 
+FINSUBPROGRAMA
+ 
+------------------------------
+ 
+SUBPROGRAMA Mas
+ 
+   res <- " "
+ 
+   MIENTRAS res <> "S" Y res <> "N" HACER
+ 
+      ESCRIBIR "Desea calcular m&aacute;s factoriales (S/N): "
+ 
+      LEER res
+ 
+      res <- Convertir_may£sculas( res )
+ 
+   FINMIENTRAS
+ 
+FINSUBPROGRAMA
+ 
+------------------------------
+ 
+SUBPROGRAMA Imprimir
+ 
+   ESCRIBIR "Su factorial es: "
+ 
+   ESCRIBIR factorial
+ 
+FINSUBPROGRAMA
+ 
+ 
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+21.-Hacer un programa que calcule independientemente la suma de los pares y
+ 
+los impares de los numeros entre 1 y 1000, utilizando un switch.
+ 
+ 
+ 
+PROGRAMA suma
+ 
+ENTORNO:
+ 
+   par <- 0
+ 
+   impar <- 0
+ 
+   sw <- 0
+ 
+   i <- 1
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS i <= 1000 HACER
+ 
+      SI sw = 0 ENTONCES
+ 
+         impar <- impar + i
+ 
+         sw <- 1
+ 
+      SINO
+ 
+         par <- par + i
+ 
+         sw <- 0
+ 
+      FINSI
+ 
+      i <- i + 1
+ 
+   FINMIENTRAS
+ 
+   ESCRIBIR "La suma de los pares es: "
+ 
+   ESCRIBIR par
+ 
+   ESCRIBIR "La suma de los impares es: "
+ 
+   ESCRIBIR impar
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+TEMA 3
+ 
+--------------------------------------------------------------------------
+ 
+Presentacion en pantalla y cabeceras
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+22.-Introducir una frase por teclado. Imprimirla cinco veces en filas
+ 
+consecutivas, pero cada impresion ir  desplazada cuatro columnas hacia la
+ 
+derecha.
+ 
+ 
+ 
+PROGRAMA frase
+ 
+ENTORNO:
+ 
+   frase <- Espacios( 30 )
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   EN 5,15 ESCRIBIR "Frase: "
+ 
+   EN 5,22 LEER frase
+ 
+   fi <- 8
+ 
+   co <- 15
+ 
+   veces <- 0
+ 
+   MIENTRAS veces <= 5 HACER
+ 
+      EN fi,co ESCRIBIR frase
+ 
+      veces <- veces + 1
+ 
+      co <- co + 4
+ 
+      fi <- fi + 1
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+23.-Hacer un pseudocodigo que imprima los n£meros del 0 al 100, controlando
+ 
+las filas y las columnas.
+ 
+ 
+ 
+PROGRAMA numeros
+ 
+ENTORNO:
+ 
+   c <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   EN 5,20 ESCRIBIR "Los n£meros del 0 al 100 son: "
+ 
+   fi <- 7
+ 
+   col <- 5
+ 
+   MIENTRAS c < 101 HACER
+ 
+      EN fi,col ESCRIBIR c
+ 
+      c <- c + 1
+ 
+      col <- col + 4
+ 
+      SI col > 75 ENTONCES
+ 
+         fi <- fi + 2
+ 
+         col <- 5
+ 
+      FINSI
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+24.-Comprobar si un numero mayor o igual que la unidad es primo.
+ 
+ 
+ 
+PROGRAMA primo
+ 
+ENTORNO:
+ 
+   res <- "S"
+ 
+ALGORITMO:
+ 
+   MIENTRAS res = "S" HACER
+ 
+      Borrar_pantalla( )
+ 
+      numero <- 0
+ 
+      sw <- 0
+ 
+      MIENTRAS numero < 1 HACER
+ 
+         EN 8,10 ESCRIBIR "N£mero: "
+ 
+         EN 8,18 LEER numero
+ 
+      FINMIENTRAS
+ 
+      i <- numero - 1
+ 
+      MIENTRAS i > 1 Y sw <> 1 HACER
+ 
+         SI numero = Int( numero / i ) * i ENTONCES
+ 
+            sw = 1
+ 
+         SINO
+ 
+            i <- i - 1
+ 
+         FINSI
+ 
+      FINMIENTRAS
+ 
+      SI sw = 1 ENTONCES
+ 
+         EN 10,10 ESCRIBIR "no es primo"
+ 
+      SINO
+ 
+         EN 10,10 ESCRIBIR "s¡ es primo"
+ 
+      FINSI
+ 
+      HACER Mas
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+------------------------------
+ 
+SUBPROGRAMA Mas
+ 
+   res <- " "
+ 
+   MIENTRAS res <> "S" Y res <> "N" HACER
+ 
+      ESCRIBIR "Desea introducir m s n£meros (S/N): "
+ 
+      LEER res
+ 
+      res <- Convertir_mayusculas( res )
+ 
+   FINMIENTRAS
+ 
+FINSUBPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+25.-Introducir un numero menor de 5000 y pasarlo a numero romano.
+ 
+ 
+ 
+PROGRAMA romano
+ 
+ENTORNO:
+ 
+   res <- "S"
+ 
+ALGORITMO:
+ 
+   MIENTRAS res = "S" HACER
+ 
+      Borrar_pantalla( )
+ 
+      num <- 0
+ 
+      MIENTRAS num < 1 O num > 5000 HACER
+ 
+         EN 8,10 ESCRIBIR "N£mero: "
+ 
+         EN 8,18 ESCRIBIR num
+ 
+      FINMIENTRAS
+ 
+      col <- 15
+ 
+      MIENTRAS num >= 1000 HACER
+ 
+         EN 15,col ESCRIBIR "M"
+ 
+         num <- num - 1000
+ 
+         col <- col + 1
+ 
+      FINMIENTRAS
+ 
+      SI num >= 900 ENTONCES
+ 
+         EN 15,col ESCRIBIR "CM"
+ 
+         num <- num - 900
+ 
+         col <- col + 2
+ 
+      FINSI
+ 
+      SI num >= 500 ENTONCES
+ 
+         EN 15,col ESCRIBIR "D"
+ 
+         num <- num - 500
+ 
+         col <- col + 1
+ 
+      FINSI
+ 
+      MIENTRAS num >= 100 HACER
+ 
+         EN 15,col ESCRIBIR "C"
+ 
+         num <- num - 100
+ 
+         col <- col + 1
+ 
+      FINMIENTRAS
+ 
+      SI num >= 90 ENTONCES
+ 
+         EN 15,col ESCRIBIR "XC"
+ 
+         num <- num - 90
+ 
+         col <- col + 2
+ 
+      FINSI
+ 
+      SI num >= 50 ENTONCES
+ 
+         EN 15,col ESCRIBIR "L"
+ 
+         num <- num - 50
+ 
+         col <- col + 1
+ 
+      FINSI
+ 
+      SI num >= 40 ENTONCES
+ 
+         EN 15,col ESCRIBIR "XL"
+ 
+         num <- num - 40
+ 
+         col <- col + 2
+ 
+      FINSI
+ 
+      MIENTRAS num >= 10 HACER
+ 
+         EN 15,col ESCRIBIR "X"
+ 
+         num <- num - 10
+ 
+         col <- col + 1
+ 
+      FINMIENTRAS
+ 
+      SI num = 9 ENTONCES
+ 
+         EN 15,col ESCRIBIR "IX"
+ 
+         num <- num - 9
+ 
+         col <- col + 2
+ 
+      FINSI
+ 
+      SI num >= 5 ENTONCES
+ 
+         EN 15,col ESCRIBIR "V"
+ 
+         num <- num - 5
+ 
+         col <- col + 1
+ 
+      FINSI
+ 
+      SI num >= 4 ENTONCES
+ 
+         EN 15,col ESCRIBIR "IV"
+ 
+         num <- num - 4
+ 
+         col <- col + 2
+ 
+      FINSI
+ 
+      MIENTRAS num > 0 HACER
+ 
+         EN 15,col ESCRIBIR "I"
+ 
+         num <- num - 1
+ 
+         col <- col + 1
+ 
+      FINMIENTRAS
+ 
+      HACER Mas
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+------------------------------
+ 
+SUBPROGRAMA Mas
+ 
+   res <- " "
+ 
+   MIENTRAS res <> "S" Y res <> "N" HACER
+ 
+      ESCRIBIR "Desea introducir m s n£meros (S/N): "
+ 
+      LEER res
+ 
+      res <- Convertir_mayusculas( res )
+ 
+   FINMIENTRAS
+ 
+FINSUBPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+26.-Introducir una frase por teclado. Imprimirla en el centro de la pantalla.
+ 
+ 
+ 
+PROGRAMA centro
+ 
+ENTORNO:
+ 
+   res <- "S"
+ 
+   frase <- Espacios( 40 )
+ 
+ALGORITMO:
+ 
+   MIENTRAS res = "S" HACER
+ 
+      Borrar_pantalla( )
+ 
+      EN 5,15 ESCRIBIR "Frase: "
+ 
+      EN 5,22 LEER frase
+ 
+      EN 12,40 - Int( Longitud( frase ) / 2 ) ESCRIBIR frase
+ 
+      HACER Mas
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+27.-Realizar la tabla de multiplicar de un numero entre 0 y 10.
+ 
+ 
+ 
+PROGRAMA tabla
+ 
+ENTORNO:
+ 
+   num <- -1
+ 
+ALGORITMO:
+ 
+   HACER Numero
+ 
+   Borrar_pantalla( )
+ 
+   EN 5,10 ESCRIBIR "Tabla de multiplicar del n£mero: "
+ 
+   EN 5,40 LEER num
+ 
+   i <- 0
+ 
+   fi <- 8
+ 
+   MIENTRAS i <= 10 HACER
+ 
+      EN fi,15 ESCRIBIR num
+ 
+      EN fi,19 ESCRIBIR " * "
+ 
+      EN fi,23 ESCRIBIR i
+ 
+      EN fi,25 ESCRIBIR " = "
+ 
+      EN fi,29 ESCRIBIR num * i
+ 
+      fi <- fi + 1
+ 
+      i <- i + 1
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+------------------------------
+ 
+SUBPROGRAMA Numero
+ 
+   MIENTRAS num < 0 HACER
+ 
+      Borrar_pantalla( )
+ 
+      EN 10,25 ESCRIBIR "N£mero: "
+ 
+      EN 10,33 LEER num
+ 
+   FINMIENTRAS
+ 
+FINSUBPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+TEMA 4
+ 
+--------------------------------------------------------------------------
+ 
+Numeros aleatorios y menus
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+28.-Simular el lanzamiento de una moneda al aire e imprimir si ha salido cara
+ 
+o cruz.
+ 
+ 
+ 
+PROGRAMA moneda
+ 
+ENTORNO:
+ 
+   res <- "S"
+ 
+ALGORITMO:
+ 
+   MIENTRAS res = "S" HACER
+ 
+      Borrar_pantalla( )
+ 
+      SI Rnd( ) <= 0.5 ENTONCES
+ 
+         EN 10,35 ESCRIBIR "Cara"
+ 
+      SINO
+ 
+         EN 10,35 ESCRIBIR "Cruz"
+ 
+      FINSI
+ 
+      HACER Mas
+ 
+   FINMIENTRAS
+ 
+FINPROGRAMA
+ 
+------------------------------
+ 
+SUBPROGRAMA Mas
+ 
+   res <- Espacios( 1 )
+ 
+   MIENTRAS res <> "S" Y res <> "N" HACER
+ 
+      EN 20,30 ESCRIBIR "M s lanzamientos (S/N): "
+ 
+      EN 20,57 LEER res
+ 
+      res <- Convertir_mayusculas( res )
+ 
+   FINMIENTRAS
+ 
+FINSUBPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+29.-Simular cien tiradas de dos dados y contar las veces que entre los dos
+ 
+suman 10.
+ 
+ 
+ 
+PROGRAMA dado
+ 
+ENTORNO:
+ 
+   c <- 0
+ 
+   i <- 0
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   MIENTRAS i < 101 HACER
+ 
+      SI Int( Rnd( ) * 6 ) + Int( Rnd( ) * 6 ) + 2 = 10 ENTONCES
+ 
+         c <- c + 1
+ 
+      FINSI
+ 
+      i <- i + 1
+ 
+   FINMIENTRAS
+ 
+   EN 10,20 ESCRIBIR "Las veces que suman 10 son: "
+ 
+   EN 10,48 ESCRIBIR c
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+30.-Simular una carrera de dos caballos si cada uno tiene igual probabilidad
+ 
+de ganar.
+ 
+ 
+ 
+PROGRAMA caballos
+ 
+ENTORNO:
+ 
+   dibujo <- "****"
+ 
+   col1 <- 4
+ 
+   col2 <- 4
+ 
+ALGORITMO:
+ 
+   Borrar_pantalla( )
+ 
+   EN 10,col1 ESCRIBIR dibujo
+ 
+   EN 10,col2 ESCRIBIR dibujo
+ 
+   MIENTRAS col1 <= 75 Y col2 <= 75 HACER
+ 
+      SI Rnd( ) <= 0.5 ENTONCES
+ 
+         EN 10,col1 ESCRIBIR Espacios( 4 )
+ 
+         col1 <- col1 + 4
+ 
+         EN 10,col1 ESCRIBIR dibujo
+ 
+      SINO
+ 
+         EN 12,col2 ESCRIBIR Espacios( 4 )
+ 
+         col2 <- col2 + 4
+ 
+         EN 12,col2 ESCRIBIR dibujo
+ 
+      FINSI
+ 
+   FINMIENTRAS
+ 
+   EN 16,20 ESCRIBIR "El ganador es el caballo n£mero: "
+ 
+   SI col1 >= 75 ENTONCES
+ 
+      EN 16,54 ESCRIBIR "1"
+ 
+   SINO
+ 
+      EN 16,54 ESCRIBIR "2"
+ 
+   FINSI
+ 
+FINPROGRAMA
+ 
+ 
+ 
+--------------------------------------------------------------------------
+ 
+ 
+ 
+ 

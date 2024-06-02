@@ -1,0 +1,1 @@
+No he ingresado al segundo periodo ajjaja actualizaciones despues de entrar.
