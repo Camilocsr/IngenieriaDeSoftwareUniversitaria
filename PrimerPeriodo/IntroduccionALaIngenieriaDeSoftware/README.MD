@@ -1,4 +1,4 @@
-# Bienvenido a la carpeta de la materia de AlgoritmosYFuncdamentosDeProgramacion
+# Bienvenido a la carpeta de la materia de Introduccion de la ingenieria....
 
 En este README te contare que encontraras en cada carpeta, en esta carpeta solo encontraras los ejercicios puest por el profesor asia mi en ese momento por lo cual esto solo estara actualizado hasta el dia de mi graduacion.
 
@@ -34,3 +34,6 @@ En este README te contare que encontraras en cada carpeta, en esta carpeta solo 
 - **ejerciciosEnClaseAscendente- descendente-Contraseña-HemoglobinaGlicosilada/desendenteyacendente.cpp**: Este código es un programa que verifica si tres números ingresados por el usuario están en orden descendente. El programa solicita tres números, los almacena en variables y luego verifica si el primer número es mayor que el segundo y el segundo es mayor que el tercer número. Si se cumple esta condición, se muestra un mensaje indicando que los números están en orden descendente. De lo contrario, se muestra un mensaje indicando que los números no están en orden descendente.[verificacion de los numeros](./ejerciciosEnClaseAscendente-%20descendente-Contrase%C3%B1a-HemoglobinaGlicosilada/desendenteyacendente.cpp)
 
 - **ejerciciosEnClaseAscendente- descendente-Contraseña-HemoglobinaGlicosilada/hemoglobina.cpp**: Este código es un programa que evalúa el nivel de hemoglobina glucosilada en función de la edad de una persona y determina si tiene diabetes, prediabetes o un nivel normal. El programa solicita la edad y el nivel de hemoglobina glucosilada, y luego utiliza una serie de condicionales para determinar el resultado. Si la edad es menor a 70 años, se evalúa el nivel de hemoglobina glucosilada y se muestra un mensaje indicando si es normal, prediabetes o diabetes. Si la edad es entre 70 y 80 años, se evalúa el nivel de hemoglobina glucosilada y se muestra un mensaje indicando si es diabetes o fuera de rango. Si la edad es mayor a 80 años, se muestra un mensaje indicando que está fuera de rango.[Hemoglobina](./ejerciciosEnClaseAscendente-%20descendente-Contrase%C3%B1a-HemoglobinaGlicosilada/hemoglobina.cpp)
+
+- **ejerciciosEnClaseTemperatura-Mayor100-ParesEImpares/clima.cpp**: Este código es un programa que permite al usuario ingresar una temperatura y luego clasifica el clima según la temperatura ingresada. El programa también ofrece la opción de realizar la operación nuevamente.[clima](./ejerciciosEnClaseTemperatura-Mayor100-ParesEImpares/clima.cpp)
+
