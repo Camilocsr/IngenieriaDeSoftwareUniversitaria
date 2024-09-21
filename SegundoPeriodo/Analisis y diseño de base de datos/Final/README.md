@@ -78,15 +78,15 @@ El sistema propuesto busca facilitar la administración de un hotel, ofreciendo 
 
 - **Final/**: Carpeta raíz del proyecto.
 
-  - **DB/**: Contiene los scripts SQL que son fundamentales para la base de datos.
+  - **DB/**: Contiene los scripts SQL que son fundamentales para la base de datos. [DB](./DB)
     - **consultas.sql**: Archivo con las consultas SQL para el sistema de gestión hotelera.
     - **DB.sql**: Script que crea la estructura de la base de datos.
     - **Insert.sql**: Script para insertar datos iniciales en las tablas.
 
-  - **Informe/**: Carpeta que alberga el informe del proyecto.
+  - **Informe/**: Carpeta que alberga el informe del proyecto. [Informe](./informe)
     - **Reporte.docx**: Documento que contiene el reporte final del proyecto.
 
-  - **RequerimientosProfesor/**: Carpeta con los requisitos proporcionados por el profesor.
+  - **RequerimientosProfesor/**: Carpeta con los requisitos proporcionados por el profesor.[Requerimientos del profesor](./RequerimientosProfesor)
     - **Act Proyecto final BD.pdf**: Archivo que detalla los requisitos del proyecto final.
 
   - **Modelo entidad relacion.pdf**: Documento que presenta el modelo entidad-relación de la base de datos.
