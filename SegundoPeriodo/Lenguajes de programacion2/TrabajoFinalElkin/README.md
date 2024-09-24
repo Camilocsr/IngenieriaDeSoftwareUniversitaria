@@ -73,6 +73,7 @@ Si en las escalas técnicas se pudieran bajar o subir pasajeros, se requeriría 
 
 A continuación se presenta un diagrama E/R que ilustra las entidades y sus relaciones:
 
+```
 [ Aeropuerto ]
     ├── Código (PK)
     ├── Nombre
@@ -99,6 +100,7 @@ A continuación se presenta un diagrama E/R que ilustra las entidades y sus rela
     ├── Aeropuerto_despegue (FK)
     ├── Aeropuerto_aterrizaje (FK)
     └── Vuelo (FK)
+```
 
 Relaciones:
 - Un Aeropuerto puede tener múltiples Modelos de Avión.
